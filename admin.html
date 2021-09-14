@@ -15,24 +15,13 @@
         body {
             font-size: 100%;
             font-family: Arial, Helvetica, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .footer {
-            margin-top: auto;
-        }
-
-        .fab {
-            font-size: 1.5rem;
         }
 
         .fab {
             font-size: 1.5rem;
         }
     </style>
-    <title>Nom du site</title>
+    <title>Visiteur identifié</title>
 
 </head>
 
@@ -40,44 +29,61 @@
     <!-- Header -->
 
     <header style="background: #f8f9fa;">
-        <div class="container">
+        <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
-                <a class="navbar-brand" href="#">
-                    <img src="favicon.png" alt="logo" width="50" height="50" class="d-inline-block align-text-center">
-                    Nom de site
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="favicon.png" alt="logo" width="50" height="50"
+                            class="d-inline-block align-text-center">
+                        Nom de site
+                    </a>
+
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-                    <div class="col-auto">
-                        Espace abonné
-                    </div>
-                    <!-- Espace abonné-->
-                    <form action="" method="POST">
-                        <div class="form-row align-items-center">
-                            <div class="col-auto">
-                                <label class="sr-only" for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Accueil </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lien</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Catalogues
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action / Catégorie</a>
+                                <a class="dropdown-item" href="#">Action / Catégorie</a>
+                                <a class="dropdown-item" href="#">Action / Catégorie</a>
                             </div>
-                            <div class="col-auto">
-                                <label class="sr-only" for="password-header">Mots de passe</label>
-                                <div class="input-group">
-                                    <input type="password" class="form-control" id="password-header"
-                                        placeholder="Mots de passe">
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <button type="submit" class="btn btn-outline-primary">Valider</button>
-                            </div>
-                        </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline mr-auto my-2 my-lg-0 ">
+                        <input class="form-control-sm mr-sm-2 " type="search" placeholder="Recherche"
+                            aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0 btn-sm ml-2" type="submit">Valider</button>
                     </form>
+                    <div class=" d-flex align-items-center row">
+                        <div class="col-auto ">
+                            <p class="m-0 mr-sm-2 ">Nom d'abonné</p>
+                        </div>
+
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-primary btn-sm">Deconnexion</button>
+                        </div>
+                    </div>
                 </div>
+
             </nav>
         </div>
     </header>
-
+    <!-- -->
     <!-- Main -->
     <main role="main" class="container ">
         <div class="text-center my-3">
