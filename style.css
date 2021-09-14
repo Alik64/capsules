@@ -45,14 +45,14 @@ li {
   transition: all 0.5s;
 }
 #zoom:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 /* Responsive */
 
 /* Portable < 576px  - XS */
 @media screen and (max-width: 576px) {
   #zoom {
-    width: 150px;
+    width: 200px;
   }
   .collection h1 {
     font-size: 25px;
@@ -88,4 +88,7 @@ li {
 
 /* Ecran large 1200px et plus - XL */
 @media screen and (min-width: 1200px) {
+  #zoom {
+    width: 200px;
+  }
 }
