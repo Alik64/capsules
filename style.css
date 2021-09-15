@@ -88,6 +88,11 @@ li {
     font-size: 1.25rem;
     line-height: 1.5;
   }
+
+  .nav-link,
+  .dropdown-item {
+    font-size: 25px;
+  }
 }
 
 /* Paysage portable 576px et plus - SM*/
