@@ -38,6 +38,7 @@ li {
 .main-visiteur {
   background-image: url("images/Fond2.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /*FORM*/
@@ -101,7 +102,7 @@ li {
 /* Desktop 992px et plus - LG*/
 @media screen and (min-width: 992px) {
   .nav-link {
-    font-size: 12px;
+    font-size: 14px;
   }
   .numero-vign {
     font-size: 12px;
@@ -113,4 +114,4 @@ li {
   #zoom {
     max-width: 150px;
   }
-} 
+}
