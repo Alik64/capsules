@@ -27,7 +27,7 @@ li {
   list-style-type: none;
 }
 /*   MAIN  */
-#main-accueil {
+.main-accueil {
   background-image: url("images/Fond.jpg");
   background-size: cover;
 }
