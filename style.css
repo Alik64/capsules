@@ -80,6 +80,9 @@ li {
   .collection h1 {
     font-size: 25px;
   }
+  .espace-abone {
+    margin-top: 2rem;
+  }
 }
 
 /* Paysage portable 576px et plus - SM*/
