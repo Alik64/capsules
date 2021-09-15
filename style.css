@@ -127,4 +127,7 @@ li {
   #zoom {
     max-width: 150px;
   }
+  .fiche-cart {
+    max-width: 220px;
+  }
 }
