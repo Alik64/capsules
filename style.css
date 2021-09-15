@@ -26,6 +26,25 @@ body {
 li {
   list-style-type: none;
 }
+/*   MAIN  */
+#main-accueil {
+  background-image: url("images/Fond.jpg");
+  background-size: cover;
+}
+.main-content {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.main-visiteur {
+  background-image: url("images/Fond2.jpg");
+  background-size: cover;
+}
+
+/*FORM*/
+
+.form-body {
+  background: rgba(255, 255, 255, 0.9);
+}
 
 /* Espace abonne*/
 .espace-abone {
@@ -34,6 +53,9 @@ li {
   align-items: center;
 }
 /* CARD */
+.fiche-capsule {
+  background: rgba(255, 255, 255, 0.9);
+}
 .card-image {
   position: relative;
   z-index: 0;
