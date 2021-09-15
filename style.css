@@ -111,6 +111,6 @@ li {
 /* Ecran large 1200px et plus - XL */
 @media screen and (min-width: 1200px) {
   #zoom {
-    width: 200px;
+    max-width: 150px;
   }
 }
