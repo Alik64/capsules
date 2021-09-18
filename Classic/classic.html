@@ -18,24 +18,23 @@
 
         <header>
             <img src="images/favicon.png" alt="logo capsule" class="logo">
-            <nav>
+            <nav id="navbar">
 
                 <ul class="menu">
                     <li class="menu-lien"><a href="#">Accueil</a></li>
                     <li class="menu-lien"><a href="#">Ma collection</a></li>
-                    <li class=" menu-lien dropdown">
-                        <h4 class="dropbtn">Catalogue</i></h4>
-                        <ul class="dropdown-content">
-                            <li><a href="#">Lien 1</a></li>
-                            <li><a href="#">Lien 2</a></li>
-                            <li><a href="#">Lien 3</a></li>
-                            <li><a href="#">Lien 4</a></li>
-                            <li><a href="#">Lien 5</a></li>
-                            <li><a href="#">Lien 6</a></li>
-                        </ul>
-                    </li>
-
                 </ul>
+                <div class="dropdown">
+                    <h4 class="dropbtn">Catalogue</i></h4>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Lien 1</a></li>
+                        <li><a href="#">Lien 2</a></li>
+                        <li><a href="#">Lien 3</a></li>
+                        <li><a href="#">Lien 4</a></li>
+                        <li><a href="#">Lien 5</a></li>
+                        <li><a href="#">Lien 6</a></li>
+                    </ul>
+                </div>
                 <form action="" class="recherche">
                     <input type="search" id="search" name="search" aria-label="La recherche sur le site"
                         placeholder="Entrez votre recherche..." class="recherche-barre">
@@ -51,46 +50,46 @@
                         <button type="submit" class="btn">Deconnexion</button>
                     </div>
                 </div>
-
-                <img src="images/menu.png" alt="menu-mobile" class="menu-mobile">
             </nav>
+            <img src="images/menu.svg" alt="menu-mobile" class="menu-mobile">
         </header>
-        <main>
+        <main class="visiteur-id">
 
         </main>
         <footer class="footer">
 
             <div class="text-center text-lg-start text-dark " style="background-color: #ECEFF1">
+
                 <!-- Section: Réseaux sociaux -->
-                <div style="background-color: rgba(0, 0, 0, 0.1)">
-                    <section class="justify-content-around p-4 d-sm-flex container ">
 
-                        <div class="me-5 mb-2">
-                            <span>Retrouvez-nous sur les réseaux sociaux</span>
-                        </div>
+                <section class="justify-content-around p-4 d-sm-flex container ">
 
-                        <div>
-                            <a href="" class=" mr-4">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="" class=" mr-4">
-                                <i class="fab fa-twitter"></i>
-                            </a>
+                    <div class="me-5 mb-2">
+                        <span>Retrouvez-nous sur les réseaux sociaux</span>
+                    </div>
 
-                            <a href="" class=" mr-4">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            </a>
-                        </div>
+                    <div>
+                        <a href="" class=" mr-4">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class=" mr-4">
+                            <i class="fab fa-twitter"></i>
+                        </a>
 
-                    </section>
-                </div>
+                        <a href="" class=" mr-4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        </a>
+                    </div>
+
+                </section>
+
 
                 <!-- Section: Liens  -->
                 <section>
                     <div class="container text-center text-md-start mt-5">
                         <!-- Grid row -->
-                        <div class="row mt-3">
+                        <div class="row">
                             <!-- Grid column -->
 
                             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
