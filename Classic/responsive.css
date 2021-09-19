@@ -140,4 +140,9 @@
     align-items: center;
     text-align: center;
   }
+
+  /*CARD*/
+  .card-body {
+    max-width: 375px;
+  }
 }
