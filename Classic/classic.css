@@ -216,7 +216,8 @@ main.visiteur-id {
   z-index: 1;
   transition: all 0.5s ease-in-out;
 }
-.card-image:hover {
+.card-image:hover,
+.card-image:active {
   transform: scale(1.3);
   position: relative;
 
