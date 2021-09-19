@@ -154,6 +154,7 @@ nav {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  z-index: 98;
 }
 
 /*--------- Barre de recherche ----------*/
