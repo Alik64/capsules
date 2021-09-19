@@ -4,6 +4,7 @@
   --dark: #9e7777;
   --clear: #deba9d;
   --clearest: #f5e8c7;
+  --ivory: #fffff0;
 
   /* ombre */
   --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -27,6 +28,7 @@ html {
   box-sizing: border-box;
 }
 body {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   height: 100vh;
 }
@@ -36,7 +38,7 @@ a {
   cursor: pointer;
 }
 a:hover {
-  color: var(--dark);
+  color: var(--darkest);
 }
 li {
   list-style-type: none;
@@ -180,8 +182,56 @@ main.visiteur-id {
   max-width: 100%;
   background-image: url("images/Fond2.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 /*___________  FOOTER ______________*/
-footer {
-  box-shadow: var(--light-shadow);
+footer h6 {
+  font-size: 24px;
+}
+
+.reseaux {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0;
+  background-color: var(--ivory);
+}
+.reseaux-icon {
+  display: flex;
+  justify-content: space-around;
+}
+.reseaux i {
+  font-size: 25px;
+  padding: 0 25px;
+}
+
+.footer-liens {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  text-align: center;
+}
+.footer-responsive {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-utile {
+  margin-right: 50px;
+}
+.footer-about {
+  max-width: 300px;
+}
+
+.footer-about > *,
+.footer-utile > *,
+.footer-contact > * {
+  margin: 15px 0;
+}
+.utile-liens li {
+  padding: 5px 0;
+}
+.copyright {
+  padding: 15px 0;
+  text-align: center;
+  background-color: var(--ivory);
 }
