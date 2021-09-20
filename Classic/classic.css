@@ -217,7 +217,8 @@ main.visiteur-id {
   transition: all 0.5s ease-in-out;
 }
 .card-image:hover,
-.card-image:active {
+.card-image:active,
+.card-image:focus {
   transform: scale(1.3);
   position: relative;
 
