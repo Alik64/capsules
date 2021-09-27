@@ -1,0 +1,22 @@
+/* Responsive */
+
+/* Ecran large 1200px et plus - XL */
+@media screen and (min-width: 1450px) {
+}
+
+/* Desktop 992px et plus - LG*/
+@media screen and (max-width: 992px) {
+}
+
+/* Tablette 850px et plus - MD*/
+@media screen and (max-width: 850px) {
+}
+
+/* Paysage portable 600px */
+@media screen and (max-width: 600px) {
+}
+
+/* iPhone 6/7/8 PLUS/ 11 */
+
+@media screen and (max-width: 414px) {
+}
