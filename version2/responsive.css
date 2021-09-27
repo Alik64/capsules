@@ -1,15 +1,29 @@
 /* Responsive */
 
-/* Ecran large 1200px et plus - XL */
-@media screen and (min-width: 1450px) {
+
+
+/* Desktop 1200px */
+@media screen and (max-width: 1200px) {
+  .news{
+    max-width: 425px;
+  }
 }
 
-/* Desktop 992px et plus - LG*/
-@media screen and (max-width: 992px) {
+/* 900px */
+@media screen and (max-width: 900px) {
+  .news{
+    max-width: 365px;
+  }
 }
 
-/* Tablette 850px et plus - MD*/
-@media screen and (max-width: 850px) {
+/* Tablette */
+@media screen and (max-width: 768px) {
+  .presentation{
+    flex-wrap: wrap;
+}
+.news{
+  flex: 100%;
+  max-width: none;
 }
 
 /* Paysage portable 600px */
