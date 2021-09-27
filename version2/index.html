@@ -29,6 +29,40 @@
                 <h2>Site privé.</h2>
                 <p>Réservé aux membres inscrits. Faite une demande via le formulaire de demande d’inscription.</p>
                 <button class="btn">Demande d'inscription</button>
+                <div class="form-inscription" id="inscript-form">
+                    <form action="" class="form-container">
+
+                        <legend>Merci de fournir les informations suivants</legend>
+
+                        <div>
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" id="dem-nom" required>
+                        </div>
+                        <div>
+                            <label for="prenom">Prenom</label>
+                            <input type="text" name="nom" id="dem-prenom">
+                        </div>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="text" placeholder="Ex: monmail@mail.com" name="email" required>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="message">Message</label>
+                            </div>
+                            <div>
+                                <textarea name="message" id="dem-message"
+                                    placeholder="Tappez votre message..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn">Envoyer</button>
+
+
+
+                    </form>
+                </div>
             </div>
         </header>
         <main class="accueil">
@@ -136,43 +170,42 @@
             <div class="footer-content">
 
                 <!-- Section: Liens  -->
-                <section class="footer-liens">
+                <div class="footer-liens">
 
-                    <div class="footer-about">
-                        <h6>Nom de site</h6>
+                    <section class="footer-about">
+                        <h3>Nom de site</h3>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam porro
                             consectetur magnam dolorem commodi odio illum culpa, aut accusamus!
                         </p>
-                    </div>
+                    </section>
 
-                    <div class="footer-responsive">
 
-                        <div class="footer-utile">
-                            <!-- Links -->
-                            <h6>Liens utiles</h6>
-                            <ul class="utile-liens">
-                                <li><a href="#!">Lien</a></li>
-                                <li><a href="#!">Lien</a></li>
-                                <li><a href="#!">Lien</a></li>
-                                <li><a href="#!">Lien</a></li>
-                                <li><a href="#!">Lien</a></li>
-                            </ul>
-                        </div>
 
-                        <div class="footer-contact">
-                            <!-- Links -->
-                            <h6>Contact</h6>
+                    <section class="footer-utile">
+                        <!-- Links -->
+                        <h3>Liens utiles</h3>
+                        <ul class="utile-liens">
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                        </ul>
+                    </section>
 
-                            <p></i> Ville, 64100, France</p>
-                            <p></i>
-                                nomdesite@example.com</p>
-                            <p></i> + 33 5 23 45 67 89</p>
-                            <p></i> + 33 6 23 45 67 89</p>
-                        </div>
+                    <section class="footer-contact">
+                        <!-- Links -->
+                        <h3>Contact</h3>
 
-                    </div>
-                </section>
+                        <p></i> Ville, 64100, France</p>
+                        <p></i>
+                            nomdesite@example.com</p>
+                        <p></i> + 33 5 23 45 67 89</p>
+                        <p></i> + 33 6 23 45 67 89</p>
+                    </section>
+
+
+                </div>
 
 
                 <!-- Copyright -->
