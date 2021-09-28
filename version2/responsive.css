@@ -20,6 +20,10 @@
 
 /* Tablette */
 @media screen and (max-width: 768px) {
+  .header_content {
+    padding-bottom: 0;
+  }
+
   .btn {
     padding: 10px 20px;
     font-size: 14px;
@@ -60,6 +64,17 @@
 /* iPhone 6/7/8 PLUS/ 11 */
 
 @media screen and (max-width: 414px) {
+  .form-dem-legend {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 20px 5px 10px;
+  }
+  .form-dem-container textarea {
+    max-height: 150px;
+  }
+  .form-dem-container {
+    height: auto;
+  }
   .footer-about,
   .footer-utile,
   .footer-contact {

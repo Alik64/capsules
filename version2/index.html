@@ -28,36 +28,38 @@
             <div class="avertissement">
                 <h2>Site privé.</h2>
                 <p>Réservé aux membres inscrits. Faite une demande via le formulaire de demande d’inscription.</p>
-                <button class="btn">Demande d'inscription</button>
-                <div class="form-inscription" id="inscript-form">
-                    <form action="" class="form-container">
+                <button class="btn demandeIns">Demande d'inscription</button>
 
-                        <legend>Merci de fournir les informations suivants</legend>
+                <div class="form-dem-inscription" id="inscript-form">
 
-                        <div>
-                            <label for="nom">Nom</label>
-                            <input type="text" name="nom" id="dem-nom" required>
-                        </div>
-                        <div>
-                            <label for="prenom">Prenom</label>
-                            <input type="text" name="nom" id="dem-prenom">
-                        </div>
-                        <div>
-                            <label for="email">E-mail</label>
-                            <input type="text" placeholder="Ex: monmail@mail.com" name="email" required>
-                        </div>
+                    <form action="" class="form-dem-container">
 
-                        <div>
-                            <div>
-                                <label for="message">Message</label>
+                        <legend class="form-dem-legend">Merci de fournir les informations suivants</legend>
+
+                        <div class="form-dem-content">
+                            <img src="images/lettre-x.svg" alt="x" class="formCloseBtn">
+
+                            <div class="form-dem-champ">
+                                <label for="nom">Nom</label>
+                                <input type="text" name="nom" id="dem-nom" required>
                             </div>
-                            <div>
+                            <div class="form-dem-champ">
+                                <label for="prenom">Prenom</label>
+                                <input type="text" name="nom" id="dem-prenom">
+                            </div>
+                            <div class="form-dem-champ">
+                                <label for="email">E-mail</label>
+                                <input type="email" placeholder="Ex: monmail@mail.com" name="email" required>
+                            </div>
+
+                            <div class="form-dem-champ">
+                                <label for="message">Message</label>
                                 <textarea name="message" id="dem-message"
                                     placeholder="Tappez votre message..."></textarea>
                             </div>
                         </div>
 
-                        <button type="submit" class="btn">Envoyer</button>
+                        <button type="submit" class="btn form-dem-btn">Envoyer</button>
 
 
 
@@ -173,7 +175,7 @@
                 <div class="footer-liens">
 
                     <section class="footer-about">
-                        <h3>Nom de site</h3>
+                        <h3>Caps.NewGénération</h3>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam porro
                             consectetur magnam dolorem commodi odio illum culpa, aut accusamus!
@@ -199,7 +201,7 @@
 
                         <p></i> Ville, 64100, France</p>
                         <p></i>
-                            nomdesite@example.com</p>
+                            caps-newgeneration@example.com</p>
                         <p></i> + 33 5 23 45 67 89</p>
                         <p></i> + 33 6 23 45 67 89</p>
                     </section>
