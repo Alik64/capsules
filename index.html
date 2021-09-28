@@ -1,241 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <!--Les icones FONTAWESOME-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <!--CSS BOOTSTRAP-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!--Style.css-->
     <link rel="stylesheet" href="style.css">
-    <title>Nom du site</title>
-
+    <link rel="stylesheet" href="responsive.css">
+    <title>Caps.NewGénération</title>
 </head>
 
 <body>
-    <!-- Header -->
+    <div class="grid-container">
+        <header>
+            <div class="header_content">
+                <div class="header_title">
+                    <h1>Caps.NewGénération</h1>
+                </div>
+                <form class="espace_abone">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="password" name="password" id="password" placeholder="Mot de passe">
+                    <button class="btn" type="submit">Connexion</button>
+                    <a href="#!">Mot de passe oublié?</a>
+                </form>
 
-    <header style="background: #f8f9fa;">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
-                <a class="navbar-brand" href="#">
-                    <img src="images/favicon.png" alt="logo" width="50" height="50"
-                        class="d-inline-block align-text-center">
-                    Nom de site
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end " id="navbarText">
-                    <div class="sm-mt-3 espace-abone flex-wrap">
-                        <div class="col-auto ">
-                            Espace abonné
-                        </div>
-                        <!-- Espace abonné-->
-                        <form action="" method="POST">
-                            <div class="form-row align-items-center ">
-                                <div class="col-auto my-2">
-                                    <label class="sr-only" for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
-                                </div>
-                                <div class="col-auto my-2">
-                                    <label class="sr-only" for="password-header">Mots de passe</label>
-                                    <div class="input-group">
-                                        <input type="password" class="form-control" id="password-header"
-                                            placeholder="Mots de passe">
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <button type="submit" class="btn btn-outline-primary">Valider</button>
-                                </div>
+            </div>
+            <div class="avertissement">
+                <h2>Site privé.</h2>
+                <p>Réservé aux membres inscrits. Faite une demande via le formulaire de demande d’inscription.</p>
+                <button class="btn demandeIns">Demande d'inscription</button>
+
+                <div class="form-dem-inscription" id="inscript-form">
+
+                    <form action="" class="form-dem-container">
+
+                        <legend class="form-dem-legend">Merci de fournir les informations suivants</legend>
+
+                        <div class="form-dem-content">
+                            <img src="images/lettre-x.svg" alt="x" class="formCloseBtn">
+
+                            <div class="form-dem-champ">
+                                <label for="nom">Nom</label>
+                                <input type="text" name="nom" id="dem-nom" required>
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+                            <div class="form-dem-champ">
+                                <label for="prenom">Prenom</label>
+                                <input type="text" name="nom" id="dem-prenom">
+                            </div>
+                            <div class="form-dem-champ">
+                                <label for="email">E-mail</label>
+                                <input type="email" placeholder="Ex: monmail@mail.com" name="email" required>
+                            </div>
 
-    <!-- Main -->
-    <main role="main" class="container-fluid main-accueil">
-        <div class="main-content container shadow my-4  mx-auto p-4">
-            <div class="text-center my-3">
-                <h1>Bienvenue sur "Nom de site" </h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, placeat.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem, laborum nulla quisquam
-                    amet
-                    eligendi ut illo perspiciatis ea suscipit?</p>
-            </div>
-
-            <div class="text-center my-3">
-                <h2 class="h3">L’accès au site est soumis à la validation par administrateur</h2>
-                <p>Merci de remplir le formulaire de demande d'inscription ci-dessous:</p>
-            </div>
-
-
-            <div class="d-flex justify-content-center mb-5">
-                <div class="col-lg-7 p-0 ">
-                    <div class="rounded border py-2 px-1 form-body">
-                        <form class="form-horizontal " action="" method="post">
-                            <fieldset>
-                                <!-- Nom input-->
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label" for="name">Nom complet :</label>
-                                    <div class="col-auto">
-                                        <input id="name" name="name" type="text" placeholder="Nom Prénom"
-                                            class="form-control" required>
-                                    </div>
-                                </div>
-
-                                <!-- Email input-->
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label" for="email">E-mail :</label>
-                                    <div class="col-auto">
-                                        <input id="email" name="email" type="email" placeholder="Ex: monmail@mail.com"
-                                            class="form-control" required>
-                                    </div>
-                                </div>
-
-                                <!-- Message body -->
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label" for="message">Message :</label>
-                                    <div class="col-auto">
-                                        <textarea class="form-control" id="message" name="message"
-                                            placeholder="Tapez votre message..." rows="5" required></textarea>
-                                    </div>
-                                </div>
-
-                                <!-- Form actions -->
-                                <div class="form-group">
-                                    <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn btn-outline-primary">Envoyer</button>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer ">
-
-        <div class="text-center text-lg-start text-dark " style="background-color: #ECEFF1">
-            <!-- Section: Réseaux sociaux -->
-            <div style="background-color: rgba(0, 0, 0, 0.1)">
-                <section class="justify-content-around p-4 d-sm-flex container ">
-
-                    <div class="me-5 mb-2">
-                        <span>Retrouvez-nous sur les réseaux sociaux</span>
-                    </div>
-
-                    <div>
-                        <a href="" class=" mr-4">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="" class=" mr-4">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-
-                        <a href="" class=" mr-4">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        </a>
-                    </div>
-
-                </section>
-            </div>
-
-            <!-- Section: Liens  -->
-            <section>
-                <div class="container text-center text-md-start mt-5">
-                    <!-- Grid row -->
-                    <div class="row mt-3">
-                        <!-- Grid column -->
-
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                            <!-- Content -->
-                            <h6 class="text-uppercase fw-bold">Nom de site</h6>
-                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                                style="width: 60px; background-color: #7c4dff; height: 2px" />
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam porro
-                                consectetur magnam dolorem commodi odio illum culpa, aut accusamus!
-                            </p>
+                            <div class="form-dem-champ">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="dem-message"
+                                    placeholder="Tappez votre message..."></textarea>
+                            </div>
                         </div>
 
-
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold">Lien utiles</h6>
-                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                                style="width: 60px; background-color: #7c4dff; height: 2px" />
-                            <p>
-                                <a href="#!" class="text-dark">Liens</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-dark">Lien divers</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-dark">Liens divers</a>
-                            </p>
-                            <p>
-                                <a href="page-autentification.html" class="text-dark">Se connecter</a>
-                            </p>
-                        </div>
+                        <button type="submit" class="btn form-dem-btn">Envoyer</button>
 
 
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold">Contact</h6>
-                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                                style="width: 60px; background-color: #7c4dff; height: 2px" />
-                            <p><i class="fas fa-home mr-3"></i> Ville, 64100, France</p>
-                            <p class="d-flex align-items-center justify-content-center"><i
-                                    class="fas fa-envelope mr-3"></i>
-                                nomdesite@example.com</p>
-                            <p><i class="fas fa-phone mr-3"></i> + 33 5 23 45 67 89</p>
-                            <p><i class="fas fa-mobile-alt mr-3"></i> + 33 6 23 45 67 89</p>
-                        </div>
 
-                    </div>
-                    <!-- Grid row -->
+                    </form>
                 </div>
+            </div>
+        </header>
+        <main class="accueil">
+            <section class="presentation">
+                <div class="presentation_txt">
+                    <h2>Présentation du site</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis vestibulum nunc. Nulla
+                        volutpat tellus lectus, non dictum erat tristique sit amet. Duis neque arcu, rutrum vel
+                        convallis sodales, ultrices et leo. Nulla accumsan, metus non aliquam tincidunt, dolor quam
+                        hendrerit est, et posuere mi nunc vitae orci. Nulla facilisi. Pellentesque id arcu quis lorem
+                        consectetur blandit. Praesent at tortor id arcu venenatis volutpat quis in nisl. Mauris a
+                        fringilla sem.
+                        <br>
+                        Praesent erat sem, dictum ut orci et, tempor cursus nibh. Curabitur scelerisque ipsum est, vitae
+                        auctor elit pellentesque a. Etiam at est sodales, eleifend erat nec, cursus felis. Curabitur a
+                        varius lorem. Morbi in tempus velit. Suspendisse a consequat felis. Class aptent taciti sociosqu
+                        ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus ut nisi nibh. Vestibulum
+                        consectetur lacus feugiat, rutrum enim et, egestas ipsum.
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit rerum, dolor rem ducimus illum
+                        quasi optio dolorum aperiam ea amet?</p>
+                </div>
+                <div class="presentation_info">
+                    <div class="presentation_fonc">
+                        <h2>Les fonctionnalités</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nostrum exercitationem suscipit
+                            blanditiis cumque soluta quam aperiam laborum eligendi officia?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium hic aperiam ducimus ea
+                            id.
+                            Quos.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni cum qui
+                            repudiandae ex eaque, in voluptatum itaque, labore nesciunt, maxime rerum tenetur? Dolore ex
+                            ut quasi suscipit sequi dicta illum quam. Distinctio nam dignissimos facilis voluptatibus
+                            dolorem sunt, explicabo vitae ipsam praesentium unde laboriosam necessitatibus earum totam
+                            pariatur iste!</p>
+                    </div>
+                    <div class="dating">
+                        <h2 class="dating_title">Date et lieu de la prochaine rencontre :</h2>
+                        <ul class="dating_info">
+                            <li>Mardi 19 octobre 2021 à 14h00</li>
+                            <li> Nom de salle</li>
+                            <li>99 rue d’Example</li>
+                            <li>123000, VIlle</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
             </section>
+            <section class="news_container">
+
+                <h2>Actualités</h2>
+
+                <div class="news_articles">
+                    <article class="news">
+                        <h3 class="news-title">Titre de news</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit veritatis illum
+                            laudantium repudiandae, facere aperiam dolores. Voluptates, molestiae. Molestiae ea amet
+                            ullam
+                            maxime laudantium veniam officia quae. Eos, dicta.</p>
+                        <a href="#!">En savoir plus</a>
+                    </article>
+                    <article class="news">
+                        <h3 class="news_title">Titre de news</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit veritatis illum
+                            laudantium repudiandae, facere aperiam dolores. Voluptates, molestiae. Molestiae ea amet
+                            ullam
+                            maxime laudantium veniam officia quae. Eos, dicta.</p>
+                        <a href="#!">En savoir plus</a>
+                    </article>
+                    <article class="news">
+                        <h3 class="news_title">Titre de news</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit veritatis illum
+                            laudantium repudiandae, facere aperiam dolores. Voluptates, molestiae. Molestiae ea amet
+                            ullam
+                            maxime laudantium veniam officia quae. Eos, dicta.</p>
+                        <a href="#!">En savoir plus</a>
+                    </article>
+                    <article class="news">
+                        <h3 class="news_title">Titre de news</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit veritatis illum
+                            laudantium repudiandae, facere aperiam dolores. Voluptates, molestiae. Molestiae ea amet
+                            ullam
+                            maxime laudantium veniam officia quae. Eos, dicta.</p>
+                        <a href="#!">En savoir plus</a>
+                    </article>
+                    <article class="news">
+                        <h3 class="news_title">Titre de news</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit veritatis illum
+                            laudantium repudiandae, facere aperiam dolores. Voluptates, molestiae. Molestiae ea amet
+                            ullam
+                            maxime laudantium veniam officia quae. Eos, dicta.</p>
+                        <a href="#!">En savoir plus</a>
+                    </article>
+                </div>
 
 
-            <!-- Copyright -->
-            <div class="text-muted text-center p-4 " style="background-color: rgba(0, 0, 0, 0.1)">
-                © 2021 Copyright
+            </section>
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer-content">
+
+                <!-- Section: Liens  -->
+                <div class="footer-liens">
+
+                    <section class="footer-about">
+                        <h3>Caps.NewGénération</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam porro
+                            consectetur magnam dolorem commodi odio illum culpa, aut accusamus!
+                        </p>
+                    </section>
+
+
+
+                    <section class="footer-utile">
+                        <!-- Links -->
+                        <h3>Liens utiles</h3>
+                        <ul class="utile-liens">
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="footer-contact">
+                        <!-- Links -->
+                        <h3>Contact</h3>
+
+                        <p></i> Ville, 64100, France</p>
+                        <p></i>
+                            caps-newgeneration@example.com</p>
+                        <p></i> + 33 5 23 45 67 89</p>
+                        <p></i> + 33 6 23 45 67 89</p>
+                    </section>
+
+
+                </div>
+
+
+                <!-- Copyright -->
+                <div class="copyright">
+                    © 2021 Copyright
+                </div>
+                <!-- Copyright -->
             </div>
-            <!-- Copyright -->
-        </div>
-        <!-- Footer -->
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+            <!-- Footer -->
+        </footer>
+    </div>
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>
