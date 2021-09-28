@@ -80,4 +80,9 @@
   .footer-contact {
     flex: 100%;
   }
+
+  .news-big-article {
+    text-align: center;
+    line-height: 1.4;
+  }
 }
