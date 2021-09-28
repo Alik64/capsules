@@ -80,7 +80,9 @@
   .footer-contact {
     flex: 100%;
   }
-
+  .footer-about p {
+    padding: 0 15px;
+  }
   .news-big-article {
     text-align: center;
     line-height: 1.4;
