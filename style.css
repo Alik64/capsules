@@ -217,7 +217,7 @@ footer {
   height: 30px;
   padding: 0 10px;
   margin-top: 10px;
-  border: none;
+  border: 0.1px solid var(--light-grey);
   -webkit-box-shadow: var(--shadow-box);
   box-shadow: var(--shadow-box);
 }
