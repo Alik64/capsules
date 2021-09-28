@@ -62,8 +62,8 @@ li {
     "footer";
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: auto auto 1fr;
-  grid-template-rows: auto auto 1fr;
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
 }
 header {
   -ms-grid-row: 1;
@@ -336,6 +336,9 @@ main.accueil {
 .news > * {
   margin-bottom: 10px;
 }
+.news-big-article {
+  max-width: 1200px;
+}
 
 /*___________  FOOTER ______________*/
 
@@ -386,5 +389,5 @@ main.accueil {
 .copyright {
   padding: 15px 0;
   text-align: center;
-  background-color: var(--ivory);
+  background-color: #fff;
 }
