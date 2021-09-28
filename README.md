@@ -1,5 +1,5 @@
 # capsules
 
-[Page d'accueil](https://alik64.github.io/capsules/)
+[Page d'accueil](https://alik64.github.io/capsules/page_accueil)
 
-[Page visiteur identifié - CSS + JS](https://alik64.github.io/capsules/Classic/classic.html)
+[Page admin](https://alik64.github.io/capsules/page_admin)
