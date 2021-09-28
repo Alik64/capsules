@@ -150,7 +150,9 @@ footer {
   z-index: 10;
 }
 /*----- Menu -----*/
-
+.menu-mobil {
+  display: none;
+}
 .menu {
   display: flex;
   justify-content: center;
