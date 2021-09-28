@@ -1,0 +1,90 @@
+/* Responsive */
+
+/* Desktop 1200px */
+@media screen and (max-width: 1200px) {
+  .news {
+    max-width: 425px;
+  }
+
+  .footer-about {
+    flex: 70%;
+  }
+}
+
+/* 900px */
+@media screen and (max-width: 900px) {
+  .news {
+    max-width: 365px;
+  }
+}
+
+/* Tablette */
+@media screen and (max-width: 768px) {
+  .header_content {
+    padding-bottom: 0;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--grey);
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .espace_abone {
+    position: static;
+    margin: 30px 0;
+    align-items: center;
+  }
+  .espace_abone > * {
+    margin-bottom: 15px;
+  }
+  .espace_abone input[type="email"],
+  .espace_abone input[type="password"] {
+    width: 267px;
+    padding: 10px 15px;
+    color: var(--grey);
+  }
+
+  .presentation {
+    flex-wrap: wrap;
+  }
+  .news {
+    flex: 100%;
+    max-width: none;
+  }
+}
+
+/* Paysage portable 600px */
+@media screen and (max-width: 600px) {
+}
+
+/* iPhone 6/7/8 PLUS/ 11 */
+
+@media screen and (max-width: 414px) {
+  .form-dem-legend {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 20px 5px 10px;
+  }
+  .form-dem-container textarea {
+    max-height: 150px;
+  }
+  .form-dem-container {
+    height: auto;
+  }
+  .footer-about,
+  .footer-utile,
+  .footer-contact {
+    flex: 100%;
+  }
+  .footer-about p {
+    padding: 0 15px;
+  }
+  .news-big-article {
+    text-align: center;
+    line-height: 1.4;
+  }
+}
