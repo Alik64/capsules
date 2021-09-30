@@ -27,7 +27,7 @@
 }
 
 /* Tablette */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .header_top {
     gap: 20px;
     z-index: 9;

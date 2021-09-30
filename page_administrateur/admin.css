@@ -198,12 +198,15 @@ footer {
   padding-left: 10px;
 }
 /*----- RECHERCHE -----*/
-
+.sec-recherche {
+  background-color: #c4c4c4;
+}
 .recherche {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #c4c4c4;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .search {
   width: 320px;
@@ -218,7 +221,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 5px;
+  row-gap: 5px;
+  column-gap: 17px;
 }
 .select-vigneron {
   width: 240px;
