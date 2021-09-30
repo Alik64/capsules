@@ -206,7 +206,7 @@ footer {
   background-color: #c4c4c4;
 }
 .search {
-  width: 390px;
+  width: 320px;
   height: 30px;
   border-radius: 15px;
   border: 1px solid var(--light-grey);
