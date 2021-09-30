@@ -48,7 +48,7 @@
   }
   .header_menu {
     background-color: #c4c4c4;
-    position: fixed;
+    position: absolute;
     top: -100%;
     transition: all 0.5s ease-in-out;
     width: 100%;
