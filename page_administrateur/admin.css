@@ -129,6 +129,9 @@ footer {
 .espace_abone > * {
   margin-bottom: 6px;
 }
+.espace_user {
+  margin-top: 5px;
+}
 
 /* Demande d'inscription */
 .form-dem-inscription {
