@@ -30,9 +30,15 @@
 @media screen and (max-width: 768px) {
   .header_top {
     gap: 20px;
-    z-index: 1;
-    position: relative;
+    z-index: 9;
+    position: fixed;
+    width: 100%;
   }
+  main,
+  footer {
+    margin-top: 121px;
+  }
+
   .menu-mobil {
     display: block;
     position: absolute;
@@ -41,15 +47,16 @@
     width: 45px;
   }
   .header_menu {
+    background-color: #c4c4c4;
     position: absolute;
     top: -100%;
     transition: all 0.5s ease-in-out;
-
     width: 100%;
     box-shadow: var(--light-shadow);
+    z-index: 1;
   }
   .header_menu.open {
-    top: 177px;
+    top: 121px;
   }
   .btn {
     padding: 10px 20px;
@@ -71,9 +78,13 @@
     justify-content: center;
     gap: 20px;
     width: 100%;
+    padding: 10px 0;
   }
   .espace_abone > * {
     margin-bottom: 0;
+  }
+  .espace_user {
+    margin-top: 10px;
   }
   .menu {
     flex-direction: column;
@@ -135,16 +146,17 @@
   .menu-mobil {
     width: 35px;
   }
+  .header_menu.open {
+    top: 91px;
+  }
   .header_top {
     padding-bottom: 10px;
   }
   .header_title h1 {
-    font-size: 24px;
+    font-size: 20px;
     transform: translate(-18%, -30%);
   }
-  .espace_user {
-    margin-top: 10px;
-  }
+
   .recherche-checks {
     gap: 17px;
   }
