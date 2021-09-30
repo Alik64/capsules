@@ -36,7 +36,7 @@
   }
   main,
   footer {
-    margin-top: 121px;
+    margin-top: 120px;
   }
 
   .menu-mobil {
@@ -147,7 +147,7 @@
     width: 35px;
   }
   .header_menu.open {
-    top: 91px;
+    top: 90px;
   }
   .header_top {
     padding-bottom: 10px;
