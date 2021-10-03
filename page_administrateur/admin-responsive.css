@@ -34,9 +34,12 @@
     position: fixed;
     width: 100%;
   }
-  main,
-  footer {
+  main {
     margin-top: 121px;
+  }
+
+  footer {
+    margin-top: 90px;
   }
 
   .menu-mobil {
@@ -46,10 +49,16 @@
     right: 30px;
     width: 45px;
   }
+
+  .header-top {
+    position: relative;
+  }
   .header_menu {
     background-color: #c4c4c4;
     position: fixed;
     top: -100%;
+    left: O;
+    right: 0;
     transition: all 0.5s ease-in-out;
     width: 100%;
     box-shadow: var(--light-shadow);
@@ -57,7 +66,6 @@
   }
   .header_menu.open {
     top: 120px;
-    height: 100vh;
   }
   .btn {
     padding: 10px 20px;
@@ -116,6 +124,9 @@
   .sub-menu li {
     width: auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.097);
+  }
+  .sec-recherche {
+    display: none;
   }
   .recherche {
     flex-direction: column;
