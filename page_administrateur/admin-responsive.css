@@ -57,6 +57,7 @@
   }
   .header_menu.open {
     top: 120px;
+    height: 100vh;
   }
   .btn {
     padding: 10px 20px;
