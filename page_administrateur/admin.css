@@ -138,25 +138,6 @@ footer {
   margin-top: 5px;
 }
 
-/* Demande d'inscription */
-.form-dem-inscription {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  visibility: hidden;
-  z-index: -10;
-}
-/* Afficher formulaire onClick*/
-.form-dem-inscription.open-modal {
-  visibility: visible;
-  z-index: 10;
-}
 /*----- Menu -----*/
 .menu-mobil {
   display: none;
@@ -208,6 +189,9 @@ footer {
 .rechercheMob {
   display: none;
 }
+
+/*____ POP UP AJOUT MUSELET _____*/
+
 /*----- RECHERCHE -----*/
 .sec-recherche {
   background-color: #c4c4c4;
@@ -297,12 +281,13 @@ main {
 .card-img {
   position: relative;
   width: 100%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.card-img:hover,
-.card-image:active {
+
+.card-image:hover {
   transform: scale(1.3);
   z-index: 1;
+  transition: all 0.5s ease-in-out;
 }
 
 .card-info > * {
