@@ -134,13 +134,19 @@
   .search {
     width: 340px;
   }
+  .card-wrapper {
+    gap: 10px;
+  }
+  .card-body {
+    max-width: 225px;
+  }
 }
 
 /* Paysage portable 600px */
 @media screen and (max-width: 600px) {
 }
 
-/* iPhone 6/7/8 PLUS/ 11 */
+/* Portable */
 
 @media screen and (max-width: 500px) {
   .menu-mobil {
@@ -165,6 +171,18 @@
   .search {
     width: 270px;
   }
+
+  .card-wrapper {
+    gap: 20px;
+  }
+  .card-body {
+    max-width: 280px;
+  }
+  .card-btn {
+    padding: 5px 20px;
+    border-radius: 5px;
+  }
+
   .footer-about,
   .footer-utile,
   .footer-contact {
