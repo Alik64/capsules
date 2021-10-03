@@ -50,6 +50,11 @@ li {
   color: var(--grey);
   background-color: #fff;
   cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.btn:hover {
+  background: grey;
+  color: #fff;
 }
 /*-------------------- Grid --------------*/
 .grid-container {
@@ -237,7 +242,7 @@ footer {
 
 /*___________  MAIN ______________*/
 
-main.admin {
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,14 +283,74 @@ main.admin {
 .card-body {
   max-width: 180px;
   box-shadow: var(--shadow-box);
+  border-radius: 10px;
   padding: 10px 5px;
   text-align: center;
+  position: relative;
 }
 .card-image {
+  position: relative;
+}
+.card-img {
+  position: relative;
+  width: 100%;
   transition: all 0.3s ease-in-out;
 }
-.card-image:hover {
+.card-img:hover {
   transform: scale(1.3);
+  z-index: 1;
+}
+
+.card-info > * {
+  margin-bottom: 3px;
+  font-size: 15px;
+}
+.card-title {
+  font-size: 17px;
+}
+
+.info-icones {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 3px 0;
+}
+.card-buttons {
+  width: 100%;
+  border-top: 1px solid #c4c4c4;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.card-btn {
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.btn-suppr {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+.btn-suppr:hover,
+.btn-modif:hover,
+.btn-creer:hover {
+  color: #fff;
+  box-shadow: var(--light-shadow);
+}
+.btn-suppr:hover {
+  background: #ff0000;
+}
+.btn-modif {
+  border: 1px solid #0000ff;
+}
+.btn-modif:hover {
+  background: #0000ff;
+}
+.btn-creer {
+  border: 1px solid #008000;
+}
+.btn-creer:hover {
+  background: #008000;
 }
 
 /*___________  FOOTER ______________*/
