@@ -326,6 +326,8 @@ main {
 .card-btn {
   padding: 3px 5px;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .btn-suppr {
   border: 1px solid #ff0000;
