@@ -64,6 +64,12 @@
     box-shadow: var(--light-shadow);
     z-index: 1;
   }
+  .rechercheMob {
+    display: block;
+  }
+  .ico-loupe {
+    transform: translate(-3px, 7px);
+  }
   .header_menu.open {
     top: 120px;
   }
