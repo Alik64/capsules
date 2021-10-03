@@ -69,6 +69,7 @@
   }
   .ico-loupe {
     transform: translate(-3px, 7px);
+    width: 20px;
   }
   .header_menu.open {
     top: 120px;
