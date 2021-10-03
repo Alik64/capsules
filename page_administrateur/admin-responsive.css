@@ -160,14 +160,6 @@
   .card-body {
     max-width: 225px;
   }
-
-  /*Annule effet HOVER pour en mobile */
-  @media (hover: hover) {
-    .card-image:hover {
-      transform: scale(1.3);
-      z-index: 1;
-    }
-  }
 }
 
 /* Paysage portable 600px */
