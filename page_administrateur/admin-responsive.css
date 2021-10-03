@@ -30,7 +30,7 @@
 @media screen and (max-width: 800px) {
   .header_top {
     gap: 20px;
-    z-index: 9;
+    z-index: 999;
     position: fixed;
     width: 100%;
   }
@@ -41,7 +41,9 @@
   footer {
     margin-top: 90px;
   }
-
+  .newCaps-container {
+    top: 30%;
+  }
   .menu-mobil {
     display: block;
     position: fixed;
@@ -192,6 +194,16 @@
     width: 270px;
   }
 
+  .newCaps-container {
+    max-width: 300px;
+    margin-left: -150px;
+    top: 30%;
+  }
+  .newCaps-champ.chBox {
+    font-size: 15px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
   .card-wrapper {
     gap: 20px;
   }

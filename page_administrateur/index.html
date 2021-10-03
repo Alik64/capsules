@@ -116,8 +116,6 @@
                                         </div>
 
                                     </div>
-
-
                                 </section>
                             </li>
 
@@ -148,7 +146,7 @@
                             <li onclick="" class="menu-item" data-menu="menuAdmin">Admin
                                 <ul class="sub-menu" id="menuAdmin">
                                     <li><a href="#!">Gestion des utilisateurs</a></li>
-                                    <li><a href="#!">Ajout nouveaux Muselet</a></li>
+                                    <li><a href="#!" id="addNewCaps">Ajout nouveaux Muselet</a></li>
                                     <li><a href="#!">Gestion des news</a></li>
                                     <li><a href="#!">Lien divers</a></li>
                                 </ul>
@@ -156,9 +154,7 @@
 
                         </ul>
                     </nav>
-                    <section class="formulaires">
 
-                    </section>
 
                 </section>
                 <section class="sec-recherche">
@@ -239,7 +235,103 @@
             </div>
         </header>
         <main class="admin">
+            <section class="formulaires">
 
+                <div class="newCaps">
+
+                    <form action="" class="newCaps-container">
+                        <img src="images/lettre-x.svg" alt="x" class="newCapsCloseBtn">
+                        <legend class="newCaps-legend">Nouveau muselet</legend>
+
+                        <div class="newCaps-content">
+
+                            <div class="newCaps-champ newImage">
+                                <label for="newCaps-img">Ajouter une image</label>
+                                <input type="file" id="newCaps-img" name="newCaps-img" accept="image/png, image/jpeg">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-vigneron">Vigneron</label>
+                                <input type="text" name="newCaps-vigneron" id="newCaps-vigneron">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-numero">Numéro</label>
+                                <input type="text" name="newCaps-numero" id="newCaps-numero">
+                            </div>
+                            <div class="newCaps-champ chBox">
+                                <div>
+                                    <input type="checkbox" name="newCaps-collection" id="newCaps-collection">
+                                    <label for="newCaps-collection">Collection</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="newCaps-rare" id="newCaps-rare">
+                                    <label for="newCaps-rare">Rare</label>
+
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="newCaps-RectoVerso" id="newCaps-RectoVerso">
+                                    <label for="newCaps-RectoVerso">Recto-Verso</label>
+                                </div>
+
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-Fabricant">Fabricant</label>
+                                <input type="text" name="newCaps-Fabricant" id="newCaps-Fabricant">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-Annee">Année</label>
+                                <input type="text" name="newCaps-Annee" id="newCaps-Annee">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-Bouteille">Bouteille</label>
+                                <input type="text" name="newCaps-Bouteille" id="newCaps-Bouteille">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-Matiere">Matière</label>
+                                <input type="text" name="newCaps-Matiere" id="newCaps-Matiere">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-Commemorative">Commémorative</label>
+                                <input type="text" name="newCaps-Commemorative" id="newCaps-Commemorative">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-Commemorative">Commémorative</label>
+                                <input type="text" name="newCaps-Commemorative" id="newCaps-Commemorative">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-Peinture">Peinture</label>
+                                <input type="text" name="newCaps-Peinture" id="newCaps-Peinture">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-DescriptFond1">Description Fond 1</label>
+                                <input type="text" name="newCaps-DescriptFond1" id="newCaps-DescriptFond1">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-DescriptFond2">Description Fond 2</label>
+                                <input type="text" name="newCaps-DescriptFond2" id="newCaps-DescriptFond2">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-DesciptJupe1">Desciption Jupe 1</label>
+                                <input type="text" name="newCaps-DesciptJupe1" id="newCaps-DesciptJupe1">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-DesciptJupe2">Desciption Jupe 2</label>
+                                <input type="text" name="newCaps-DesciptJupe2" id="newCaps-DesciptJupe2">
+                            </div>
+                            <div class="newCaps-champ">
+                                <label for="newCaps-Prix">Prix</label>
+                                <input type="text" name="newCaps-Prix" id="newCaps-Prix">
+                            </div>
+
+
+                        </div>
+
+                        <button type="submit" class="btn newCaps-btn">Ajouter</button>
+
+
+
+                    </form>
+                </div>
+            </section>
             <section class="card-wrapper row">
 
 
