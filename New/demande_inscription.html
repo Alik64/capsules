@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Demande d'inscription</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="header_content">
+                <div class="header_title_acc">
+                    <h1 style="margin: 10px;">Caps.NewGénération</h1>
+                </div>
+                <form class="espace_abone_acc">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="password" name="password" id="password" placeholder="Mot de passe">
+                    <button class="btn" type="submit">Connexion</button>
+                    <a href="#!">Mot de passe oublié?</a>
+                </form>
+
+            </div>
+
+        </header>
+        <main class="demande_inscription">
+            <h1>demande d'incription</h1>
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer-content">
+
+                <!-- Section: Liens  -->
+                <div class="footer-liens">
+
+                    <section class="footer-about">
+                        <h3>Caps.NewGénération</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam porro
+                            consectetur magnam dolorem commodi odio illum culpa, aut accusamus!
+                        </p>
+                    </section>
+
+
+
+                    <section class="footer-utile">
+                        <!-- Links -->
+                        <h3>Liens utiles</h3>
+                        <ul class="utile-liens">
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="footer-contact">
+                        <!-- Links -->
+                        <h3>Contact</h3>
+
+                        <p></i> Ville, 64100, France</p>
+                        <p></i>
+                            caps-newgeneration@example.com</p>
+                        <p></i> + 33 5 23 45 67 89</p>
+                        <p></i> + 33 6 23 45 67 89</p>
+                    </section>
+
+
+                </div>
+
+
+                <!-- Copyright -->
+                <div class="copyright">
+                    © 2021 Copyright
+                </div>
+                <!-- Copyright -->
+            </div>
+            <!-- Footer -->
+        </footer>
+    </div>
+
+
+    <script>
+        // page d'accueil
+
+        const demandeBtn = document.querySelector(".demandeIns");
+        const formulaireDemandeIns = document.querySelector(".form-dem-inscription");
+        const closeBtn = document.querySelector(".formCloseBtn");
+
+        demandeBtn.addEventListener("click", () => {
+            formulaireDemandeIns.classList.add("open-modal");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            formulaireDemandeIns.classList.remove("open-modal");
+        });
+    </script>
+</body>
+
+</html>
