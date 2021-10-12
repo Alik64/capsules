@@ -14,10 +14,10 @@
     <div class="grid-container">
         <header>
             <div class="header_content">
-                <div class="header_title">
+                <div class="header_title_acc">
                     <h1>Caps.NewGénération</h1>
                 </div>
-                <form class="espace_abone">
+                <form class="espace_abone_acc">
                     <input type="email" name="email" id="email" placeholder="E-mail">
                     <input type="password" name="password" id="password" placeholder="Mot de passe">
                     <button class="btn" type="submit">Connexion</button>
@@ -230,7 +230,21 @@
     </div>
 
 
-    <script src="app.js"></script>
+    <script>
+        // page d'accueil
+
+        const demandeBtn = document.querySelector(".demandeIns");
+        const formulaireDemandeIns = document.querySelector(".form-dem-inscription");
+        const closeBtn = document.querySelector(".formCloseBtn");
+
+        demandeBtn.addEventListener("click", () => {
+            formulaireDemandeIns.classList.add("open-modal");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            formulaireDemandeIns.classList.remove("open-modal");
+        });
+    </script>
 </body>
 
 </html>
