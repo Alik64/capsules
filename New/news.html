@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>News</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="header_content">
+                <div class="header_title">
+                    <h1>Caps.NewGénération</h1>
+                </div>
+                <form class="espace_abone">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="password" name="password" id="password" placeholder="Mot de passe">
+                    <button class="btn" type="submit">Connexion</button>
+                    <a href="#!">Mot de passe oublié?</a>
+                </form>
+
+            </div>
+            <div class="avertissement">
+                <h2>Site privé.</h2>
+                <p>Réservé aux membres inscrits. Faite une demande via le formulaire de demande d’inscription.</p>
+                <button class="btn demandeIns">Demande d'inscription</button>
+
+                <div class="form-dem-inscription" id="inscript-form">
+
+                    <form action="" class="form-dem-container">
+
+                        <legend class="form-dem-legend">Merci de fournir les informations suivants</legend>
+
+                        <div class="form-dem-content">
+                            <img src="images/lettre-x.svg" alt="x" class="formCloseBtn">
+
+                            <div class="form-dem-champ">
+                                <label for="nom">Nom</label>
+                                <input type="text" name="nom" id="dem-nom" required>
+                            </div>
+                            <div class="form-dem-champ">
+                                <label for="prenom">Prenom</label>
+                                <input type="text" name="nom" id="dem-prenom">
+                            </div>
+                            <div class="form-dem-champ">
+                                <label for="email">E-mail</label>
+                                <input type="email" placeholder="Ex: monmail@mail.com" name="email" required>
+                            </div>
+
+                            <div class="form-dem-champ">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="dem-message"
+                                    placeholder="Tappez votre message..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn form-dem-btn">Envoyer</button>
+
+
+
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main class="accueil">
+
+            <section class="news_container">
+
+
+
+                <article class="news-big-article">
+                    <h2>Titre de news</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus architecto fugit illum
+                        commodi, nobis veritatis culpa velit sed voluptatem quas corporis maxime vel repudiandae amet
+                        similique tempora laborum alias necessitatibus numquam? Ipsam unde dolores accusamus, aliquid
+                        magni maxime eius dicta. Provident tempora nisi laboriosam culpa rerum placeat architecto
+                        aliquam possimus.</p>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui explicabo voluptates eum magnam
+                        itaque sint soluta exercitationem, quia suscipit vero inventore tempore odit autem nostrum
+                        obcaecati quidem quam. Dolorum, aliquid culpa distinctio rem perspiciatis aspernatur, minima
+                        inventore qui nam explicabo quos dignissimos, totam dolorem eos!</p>
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer-content">
+
+                <!-- Section: Liens  -->
+                <div class="footer-liens">
+
+                    <section class="footer-about">
+                        <h3>Caps.NewGénération</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam porro
+                            consectetur magnam dolorem commodi odio illum culpa, aut accusamus!
+                        </p>
+                    </section>
+
+
+
+                    <section class="footer-utile">
+                        <!-- Links -->
+                        <h3>Liens utiles</h3>
+                        <ul class="utile-liens">
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                            <li><a href="#!">Lien</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="footer-contact">
+                        <!-- Links -->
+                        <h3>Contact</h3>
+
+                        <p></i> Ville, 64100, France</p>
+                        <p></i>
+                            caps-newgeneration@example.com</p>
+                        <p></i> + 33 5 23 45 67 89</p>
+                        <p></i> + 33 6 23 45 67 89</p>
+                    </section>
+
+
+                </div>
+
+
+                <!-- Copyright -->
+                <div class="copyright">
+                    © 2021 Copyright
+                </div>
+                <!-- Copyright -->
+            </div>
+            <!-- Footer -->
+        </footer>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
