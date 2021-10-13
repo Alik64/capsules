@@ -445,6 +445,7 @@ main {
 /*____ AJOUT Modifier MUSELET _____*/
 .formulaire-ajout {
   min-width: 80%;
+  margin: 20px 0;
 }
 .newCaps-container {
   width: 100%;
@@ -478,20 +479,46 @@ main {
   text-align: center;
   margin-bottom: 20px;
 }
-.newCaps-champ {
+.newCaps-Criteres > * {
+  margin-bottom: 20px;
+}
+
+/*--- Critères grid ----*/
+.newCaps-Selects {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+}
+.newCaps-CheckBoxes {
   display: flex;
   align-items: center;
-}
-.newCaps-champ.chBox {
   flex-direction: row;
   justify-content: space-around;
   padding: 10px;
 }
+.newCaps-Champs,
+.newCaps-Descriptions .descriptions {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+}
+/*---  end grid ----*/
+.newCaps-Descriptions h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px;
+}
+.newCaps-champ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .newCaps-champ input[type="text"] {
-  width: 100%;
+  width: 150px;
   height: 30px;
   padding: 0 10px;
-
   border: 1px solid rgba(0, 0, 0, 0.111);
   -webkit-box-shadow: var(--shadow-box);
   box-shadow: var(--shadow-box);
@@ -502,11 +529,11 @@ main {
   padding: 0 10px;
   margin-top: 10px;
 }
-.newCaps-Selects {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 10px;
+.newCaps-champ label {
+  font-size: 15px;
+  margin-right: 10px;
 }
+
 .newCaps-btn {
   padding: 10px 20px;
   display: block;
