@@ -8,7 +8,36 @@ menuMobil.addEventListener("click", () => {
   headerMenu.classList.toggle("open");
 });
 
-// Page Ajout - Modification Capsule
+// Changement image RECTO - VERSO
+
+const rvButtons = document.querySelectorAll(".ico-rv") || [];
+rvButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    const icoRV = e.target;
+
+    const cardImg =
+      e.target.parentElement.parentElement.parentElement.parentElement
+        .parentElement.children[0].children[0].children[0];
+    const cardImg1 =
+      e.target.parentElement.parentElement.parentElement.parentElement
+        .parentElement.children[0].children[0].children[1];
+    const cardImg2 =
+      e.target.parentElement.parentElement.parentElement.parentElement
+        .parentElement.children[0].children[0].children[2];
+
+    if (icoRV.classList.contains("verso")) {
+      cardImg.src = cardImg1.src;
+      icoRV.classList.remove("verso");
+      icoRV.style.transform = "rotate(360deg)";
+    } else {
+      cardImg.src = cardImg2.src;
+      icoRV.classList.add("verso");
+      icoRV.style.transform = "rotate(180deg)";
+    }
+  });
+});
+
+// PAGE AJOUT / MODIFICATION - Capsule
 
 const inputRecto = document.querySelector("#newCaps-Recto");
 const inputVerso = document.querySelector("#newCaps-Verso");
