@@ -118,7 +118,7 @@ footer {
   -ms-flex-pack: center;
   justify-content: center;
   background: #c4c4c4;
-  padding: 40px 0;
+  padding: 48px 0;
 }
 .header_title h1 {
   font-size: 36px;
@@ -647,7 +647,8 @@ main {
   main {
     margin-top: 121px;
   }
-  #demande_inscription {
+  #demande_inscription,
+  #news {
     margin-top: 35px;
   }
 
