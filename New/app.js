@@ -8,17 +8,27 @@ menuMobil.addEventListener("click", () => {
   headerMenu.classList.toggle("open");
 });
 
-// Ajout nouveau muselet
+// Page Ajout - Modification Capsule
 
-const ajouterCaps = document.querySelector("#addNewCaps");
-const newCapsContainer = document.querySelector(".newCaps-container");
-const newCapsCloseBtn = document.querySelector(".newCapsCloseBtn");
+const inputRecto = document.querySelector("#newCaps-Recto");
+const inputVerso = document.querySelector("#newCaps-Verso");
+const imgRecto = document.querySelector("#imgRecto");
+const imgVerso = document.querySelector("#imgVerso");
 
-ajouterCaps.addEventListener("click", () => {
-  newCapsContainer.classList.add("openModal");
-  headerMenu.classList.remove("open");
-});
+// Aperçu de l'image Recto
+inputRecto.onchange = (e) => {
+  const [file] = inputRecto.files;
+  if (file) {
+    imgRecto.src = URL.createObjectURL(file);
+    imgRecto.style.visibility = "visible";
+  }
+};
+// Aperçu de l'image Verso
 
-newCapsCloseBtn.addEventListener("click", () => {
-  newCapsContainer.classList.remove("openModal");
-});
+inputVerso.onchange = (e) => {
+  const [file] = inputVerso.files;
+  if (file) {
+    imgVerso.src = URL.createObjectURL(file);
+    imgVerso.style.visibility = "visible";
+  }
+};

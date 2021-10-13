@@ -454,9 +454,25 @@ main {
   padding: 20px 30px;
   border-radius: 10px;
 }
+.newCaps-content {
+  display: flex;
+}
 
-.newCaps-content > * {
-  margin-bottom: 10px;
+.newImage {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ajouterImg {
+  display: flex;
+  flex-direction: column;
+}
+.ajouterImg img {
+  width: 150px;
+  visibility: hidden;
+  margin-top: 20px;
 }
 .newCaps-legend {
   text-align: center;
