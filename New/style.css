@@ -441,6 +441,56 @@ main {
   }
 }
 /*------------------*/
+
+/*____ AJOUT Modifier MUSELET _____*/
+.formulaire-ajout {
+  min-width: 80%;
+}
+.newCaps-container {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  box-shadow: var(--shadow-box);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.newCaps-content > * {
+  margin-bottom: 10px;
+}
+.newCaps-legend {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.newCaps-champ {
+  display: flex;
+  align-items: center;
+}
+.newCaps-champ.chBox {
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+.newCaps-champ input[type="text"] {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+
+  border: 1px solid rgba(0, 0, 0, 0.111);
+  -webkit-box-shadow: var(--shadow-box);
+  box-shadow: var(--shadow-box);
+}
+.newCaps-champ input[type="file"] {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+.newCaps-btn {
+  padding: 10px 20px;
+  display: block;
+  margin: 10px auto 0;
+}
 /* Demande d'inscription */
 
 #demande_inscription h1 {
@@ -831,17 +881,6 @@ main {
   .select-vigneron,
   .search {
     width: 270px;
-  }
-
-  .newCaps-container {
-    max-width: 300px;
-    margin-left: -150px;
-    top: 30%;
-  }
-  .newCaps-champ.chBox {
-    font-size: 15px;
-    flex-wrap: wrap;
-    gap: 30px;
   }
 
   #demande_inscription h1 {
