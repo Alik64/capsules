@@ -262,6 +262,8 @@
                             <div class="newCaps-champ">
                                 <label for="newCaps-numero">Numéro</label>
                                 <input type="text" name="newCaps-numero" id="newCaps-numero">
+                                <label for="newCaps-numeroSerie">Numéro de série</label>
+                                <input type="text" name="newCaps-numeroSerie" id="newCaps-numeroSerie">
                                 <label for="newCaps-variant">Variant</label>
                                 <input type="text" name="newCaps-variant" id="newCaps-variant">
                             </div>
@@ -270,19 +272,17 @@
                                     <input type="checkbox" name="newCaps-collection" id="newCaps-collection">
                                     <label for="newCaps-collection">Collection</label>
                                 </div>
-                                <div>
-                                    <input type="checkbox" name="newCaps-courante" id="newCaps-courante">
-                                    <label for="newCaps-courante">Courante</label>
-                                    <input type="checkbox" name="newCaps-peuCourante" id="newCaps-peuCourante">
-                                    <label for="newCaps-peuCourante">Peu courante</label>
-                                    <input type="checkbox" name="newCaps-rare" id="newCaps-rare">
-                                    <label for="newCaps-rare">Rare</label>
-                                    <input type="checkbox" name="newCaps-tresRare" id="newCaps-tresRare">
-                                    <label for="newCaps-tresRare">Très rare</label>
-                                    <input type="checkbox" name="newCaps-introuvable" id="newCaps-introuvable">
-                                    <label for="newCaps-introuvable">Introuvable</label>
+                                <div class="newCaps-champ">
+                                    <select name="newCaps-Rarete" id="newCaps-Rarete" class="newCaps-Rarete">
+                                        <option value="">Rareté</option>
 
+                                        <option value="Courante">Courante</option>
+                                        <option value="PeuCourante">Peu courante</option>
+                                        <option value="Rare">Rare</option>
+                                        <option value="TresRare">Très rare</option>
+                                        <option value="Introuvable">Introuvable</option>
 
+                                    </select>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="newCaps-RectoVerso" id="newCaps-RectoVerso">
@@ -290,22 +290,106 @@
                                 </div>
 
                             </div>
-                            <div class="newCaps-champ">
-                                <label for="newCaps-Fabricant">Fabricant</label>
-                                <input type="text" name="newCaps-Fabricant" id="newCaps-Fabricant">
+
+                            <div class="newCaps-Selects">
+                                <select name="newCaps-Contenu" id="newCaps-Contenu" class="newCaps-Contenu">
+                                    <option value="">Contenu</option>
+
+                                    <option value="Champagne">Champagne</option>
+                                    <option value="Mousseux">Mousseux</option>
+                                    <option value="Cidre">Cidre</option>
+                                    <!--   ETC  -->
+                                </select>
+
+                                <select name="newCaps-Fabricant" id="newCaps-Fabricant" class="newCaps-Fabricant">
+                                    <option value="">Fabricant</option>
+
+                                    <option value="ACAC">A.C.A.C</option>
+                                    <option value="Abele Henri">Abele Henri</option>
+
+                                    <!--ETC-->
+                                </select>
+
+                                <select name="newCaps-Format" id="newCaps-Format" class="newCaps-Format">
+                                    <option value="">Format</option>
+                                    <optgroup label="Capsule">
+                                        <option value="26">26</option>
+                                        <option value="29">29</option>
+                                    </optgroup>
+                                    <optgroup label="Plaque">
+                                        <option value="26">26</option>
+                                        <option value="28">28</option>
+                                        <option value="30">30</option>
+                                        <option value="33">33</option>
+                                        <option value="40">40</option>
+
+                                    </optgroup>
+
+
+
+                                </select>
+
+                                <select name="newCaps-Matiere" id="newCaps-Matiere" class="newCaps-Matiere">
+                                    <option value="">Matiére</option>
+
+                                    <option value="Standart">Standart</option>
+                                    <option value="Aluminium">Aluminium</option>
+                                    <option value="Bronze">Bronze</option>
+                                    <!--ETC-->
+                                </select>
+
+                                <select name="newCaps-Decoration" id="newCaps-Decoration" class="newCaps-Decoration">
+                                    <option value="">Décoration</option>
+
+                                    <option value="Monochrome">Monochrome</option>
+                                    <option value="Polychrome">Polychrome</option>
+                                    <option value="Coloriage">Coloriage</option>
+                                    <!--ETC-->
+                                </select>
+
+                                <select name="newCaps-DecoSpeciale" id="newCaps-DecoSpeciale"
+                                    class="newCaps-DecoSpeciale">
+                                    <option value="">Déco spéciale</option>
+
+                                    <option value="Strat">Strat</option>
+                                    <option value="ExcluBouteille">Exclu bouteille</option>
+                                </select>
+
+                                <select name="newCaps-MenuCatalogue" id="newCaps-MenuCatalogue"
+                                    class="newCaps-MenuCatalogue">
+                                    <option value="">Menu Catalogue</option>
+
+                                    <option value="Catalogue">Catalogue</option>
+                                    <option value="Anonyme">Anonyme</option>
+                                    <option value="Générique">Générique</option>
+                                    <option value="Personnalisée">Personnalisée</option>
+
+                                </select>
+
+                                <select name="newCaps-PxBases" id="newCaps-PxBases" class="newCaps-PxBases">
+                                    <option value="">Px_Bases</option>
+
+                                    <option value="Capsule">Capsule</option>
+                                    <option value="PlaqueDeMuselet">Plaque de muselet</option>
+                                    <option value="Complaisance">Complaisance</option>
+                                    <option value="Insert">Insert</option>
+                                    <option value="Parure">Parure</option>
+                                    <option value="Bijou">Bijou</option>
+                                    <!--etc-->
+                                </select>
+
+                                <select name="newCaps-numerote" id="newCaps-numerote" class="newCaps-numerote">
+                                    <option value="">Numérote</option>
+
+                                    <option value="1">0 - 50</option>
+                                    <option value="2">51 - 100</option>
+                                    <option value="3">101 - 150</option>
+                                    <option value="4">151 - 250</option>
+                                    <option value="5">251 - 500</option>
+                                    <!--etc-->
+                                </select>
                             </div>
-                            <div class="newCaps-champ">
-                                <label for="newCaps-Format">Format</label>
-                                <input type="text" name="newCaps-Format" id="newCaps-Format">
-                            </div>
-                            <div class="newCaps-champ">
-                                <label for="newCaps-Matiere">Matière</label>
-                                <input type="text" name="newCaps-Matiere" id="newCaps-Matiere">
-                            </div>
-                            <div class="newCaps-champ">
-                                <label for="newCaps-Decoration">Decoration</label>
-                                <input type="text" name="newCaps-Decoration" id="newCaps-Decoration">
-                            </div>
+
 
 
                             <div class="newCaps-champ">

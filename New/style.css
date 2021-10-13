@@ -486,11 +486,17 @@ main {
   padding: 0 10px;
   margin-top: 10px;
 }
+.newCaps-Selects {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+}
 .newCaps-btn {
   padding: 10px 20px;
   display: block;
   margin: 10px auto 0;
 }
+
 /* Demande d'inscription */
 
 #demande_inscription h1 {
