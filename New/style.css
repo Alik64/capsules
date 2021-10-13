@@ -318,6 +318,7 @@ main {
   background-size: cover;
   background-attachment: fixed;
 }
+
 /* Présentation */
 .presentation {
   display: -webkit-box;
@@ -439,6 +440,71 @@ main {
   }
 }
 /*------------------*/
+/* Demande d'inscription */
+.form-dem-inscription {
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+/* Afficher formulaire onClick*/
+.form-dem-inscription.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.form-dem-container {
+  background-color: #fff;
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: var(--light-shadow);
+  box-shadow: var(--light-shadow);
+}
+
+.form-dem-legend {
+  font-size: 24px;
+  line-height: 21px;
+  padding: 30px 12px 50px;
+  font-weight: 400;
+}
+.formCloseBtn {
+  width: 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.form-dem-champ {
+  margin-bottom: 15px;
+}
+.form-dem-content input {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.111);
+  -webkit-box-shadow: var(--shadow-box);
+  box-shadow: var(--shadow-box);
+}
+.form-dem-container textarea {
+  width: 100%;
+  height: 265px;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.111);
+  -webkit-box-shadow: var(--shadow-box);
+  box-shadow: var(--shadow-box);
+}
+.form-dem-btn {
+  padding: 10px 20px;
+}
+/*-------- Fiche de capsule ------------*/
 
 .card-info > * {
   margin-bottom: 3px;
@@ -576,6 +642,9 @@ main {
   }
   main {
     margin-top: 121px;
+  }
+  #demande_inscription {
+    margin-top: 35px;
   }
 
   footer {

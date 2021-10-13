@@ -27,8 +27,49 @@
             </div>
 
         </header>
-        <main class="demande_inscription">
-            <h1>demande d'incription</h1>
+        <main id="demande_inscription">
+
+            <div class="form-dem-inscription" id="inscript-form">
+
+                <form action="" class="form-dem-container">
+
+                    <legend class="form-dem-legend">Merci de fournir les informations suivants</legend>
+
+                    <div class="form-dem-content">
+
+                        <div class="form-dem-champ">
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" id="dem-nom" required>
+                        </div>
+                        <div class="form-dem-champ">
+                            <label for="prenom">Prenom</label>
+                            <input type="text" name="nom" id="dem-prenom">
+                        </div>
+                        <div class="form-dem-champ">
+                            <label for="email">E-mail</label>
+                            <input type="email" placeholder="Ex: monmail@mail.com" name="email" required>
+                        </div>
+                        <div class="form-dem-champ">
+                            <label for="login">Login</label>
+                            <input type="text" name="login" id="dem-login">
+                        </div>
+                        <div class="form-dem-champ">
+                            <label for="abonnement">Abonnement</label>
+                            <input type="text" name="abonnement" id="dem-abonnement">
+                        </div>
+
+                        <div class="form-dem-champ">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="dem-message" placeholder="Tappez votre message..."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn form-dem-btn">Envoyer</button>
+
+
+
+                </form>
+            </div>
         </main>
 
         <footer class="footer">
