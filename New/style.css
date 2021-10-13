@@ -185,6 +185,7 @@ footer {
 }
 .espace_abone a,
 .espace_abone_acc a {
+  margin-top: 5px;
   color: var(--lien);
 }
 .avertissement {
@@ -470,9 +471,10 @@ main {
 
 .form-dem-legend {
   font-size: 24px;
-  line-height: 21px;
   padding: 30px 12px 50px;
   font-weight: 400;
+  text-align: center;
+  line-height: 1.4;
 }
 .formCloseBtn {
   width: 15px;
@@ -839,6 +841,13 @@ main {
     font-size: 15px;
     flex-wrap: wrap;
     gap: 30px;
+  }
+
+  #demande_inscription h1 {
+    font-size: 24px;
+  }
+  .form-dem-legend {
+    font-size: 20px;
   }
   .card-wrapper {
     gap: 20px;
