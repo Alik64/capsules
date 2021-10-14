@@ -65,6 +65,35 @@ li {
   width: 24px;
   height: 24px;
 }
+
+/* LES CLASSES POUR LA RARETE */
+
+.ico-diamant.courante {
+  /* GRIS */
+  filter: invert(83%) sepia(0%) saturate(405%) hue-rotate(135deg)
+    brightness(101%) contrast(81%);
+}
+.ico-diamant.peuCourante {
+  /* VERT */
+  filter: invert(20%) sepia(69%) saturate(4503%) hue-rotate(94deg)
+    brightness(101%) contrast(106%);
+}
+.ico-diamant.rare {
+  /* ROUGE */
+  filter: invert(9%) sepia(94%) saturate(7500%) hue-rotate(5deg)
+    brightness(102%) contrast(111%);
+}
+.ico-diamant.tresRare {
+  /* GOLD */
+  filter: invert(63%) sepia(74%) saturate(447%) hue-rotate(4deg) brightness(90%)
+    contrast(97%);
+}
+.ico-diamant.introuvable {
+  /* Violet */
+  filter: invert(35%) sepia(82%) saturate(6138%) hue-rotate(264deg)
+    brightness(97%) contrast(93%);
+}
+
 #ico-puzzle.hide,
 #ico-diamant.hide,
 #ico-rv.hide {
