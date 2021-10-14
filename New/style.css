@@ -468,6 +468,7 @@ main {
 .btn-suppr:hover {
   background: #ff0000;
 }
+
 .btn-modif {
   border: 1px solid #0000ff;
 }
@@ -480,16 +481,30 @@ main {
 .btn-creer:hover {
   background: #008000;
 }
+
+.numVariant {
+  max-width: 50px;
+  border-radius: 5px;
+  border: 0.5px solid var(--light-grey);
+  -webkit-box-shadow: var(--light-shadow);
+  box-shadow: var(--light-shadow);
+  padding: 2px 8px;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--grey);
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
 .card-image {
   position: relative;
 }
+
 .card-img {
   position: relative;
   width: 100%;
+
   transition: all 0.5s ease-in-out;
-}
-.card-img.hidden {
-  display: none;
 }
 
 .card-image:hover {
