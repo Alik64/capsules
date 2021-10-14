@@ -17,20 +17,15 @@ rvButtons.forEach((button) => {
 
     const cardImg =
       e.target.parentElement.parentElement.parentElement.parentElement
-        .parentElement.children[0].children[0].children[0];
-    const cardImg1 =
-      e.target.parentElement.parentElement.parentElement.parentElement
-        .parentElement.children[0].children[0].children[1];
-    const cardImg2 =
-      e.target.parentElement.parentElement.parentElement.parentElement
-        .parentElement.children[0].children[0].children[2];
+        .parentElement.children[0].children[0];
+    console.log(cardImg);
 
     if (icoRV.classList.contains("verso")) {
-      cardImg.src = cardImg1.src;
+      cardImg.src = cardImg.dataset.recto;
       icoRV.classList.remove("verso");
       icoRV.style.transform = "rotate(360deg)";
     } else {
-      cardImg.src = cardImg2.src;
+      cardImg.src = cardImg.dataset.verso;
       icoRV.classList.add("verso");
       icoRV.style.transform = "rotate(180deg)";
     }
