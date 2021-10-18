@@ -94,6 +94,7 @@ li {
     brightness(97%) contrast(93%);
 }
 
+li.hide,
 #ico-puzzle.hide,
 #ico-diamant.hide,
 #ico-rv.hide {
@@ -511,7 +512,7 @@ main {
   background: #008000;
 }
 
-.numVariant {
+.numCollection {
   max-width: 50px;
   border-radius: 5px;
   border: 0.5px solid var(--light-grey);
@@ -533,6 +534,7 @@ main {
   position: relative;
   width: 100%;
 
+  object-fit: contain;
   transition: all 0.5s ease-in-out;
 }
 
