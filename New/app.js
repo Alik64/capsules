@@ -30,3 +30,31 @@ rvButtons.forEach((button) => {
     }
   });
 });
+
+// Changement Title de "Diamant" en fonction de rareté
+
+const icoDiamant = document.querySelectorAll(".ico-diamant") || [];
+
+icoDiamant.forEach((diamant) => {
+  const classList = diamant.classList;
+  switch (true) {
+    case classList.contains("courante"):
+      diamant.title = "Courante";
+      break;
+    case classList.contains("peuCourante"):
+      diamant.title = "Peu courante";
+      break;
+
+    case classList.contains("rare"):
+      diamant.title = "Rare";
+      break;
+
+    case classList.contains("tresRare"):
+      diamant.title = "Très rare";
+      break;
+
+    case classList.contains("introuvable"):
+      diamant.title = "Introuvable";
+      break;
+  }
+});
