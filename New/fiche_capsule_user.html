@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Caps.NewGénération</title>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <main class="admin">
+
+            <section class="card-wrapper row">
+
+                <form action="" method="POST" class="card">
+
+                    <div class="card-body">
+
+                        <div class="card-image" onclick="">
+
+                            <img src="images/1.jpeg" data-recto="images/1.jpeg" data-verso="images/2.jpeg"
+                                alt="image de capsule" class="card-img" width="250px" height="180px">
+
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <h5 class="card-title">Vigneron</h5>
+
+                            <ul class="card-info">
+                                <div class="card-Num">
+                                    <li class="info-numero">N° 0001</li><span class="card-variant">Ex</span>
+
+                                </div>
+
+
+
+                                <li class="info-icones">
+                                    <span><img src="images/puzzle.svg" alt="puzzle" class="ico ico-puzzle"
+                                            title="Collection"></span>
+                                    <span><img src="images/diamant.svg" alt="diamant" class="ico ico-diamant rare"
+                                            title="Rare"></span>
+                                    <span><img src="images/rv.svg" alt="recto-verso" class="ico ico-rv"
+                                            title="Recto-verso"></span>
+                                </li>
+
+                                <li>Fabricant</li>
+                                <li><span>YYYY </span><span>Bouteille</span></li>
+                                <li>Matière</li>
+                                <li>Cuvée</li>
+                                <li>Decoration</li>
+                                <li>Desc Fond 1</li>
+                                <li>Desc Fond 2</li>
+                                <li>Desc Jupe 1</li>
+                                <li>Desc Jupe 2</li>
+                                <li>80€00</li>
+
+                                <li class="hide">Contenu</li>
+                                <li class="hide">Format</li>
+                                <li class="hide">Menu Catalogue</li>
+                                <li class="hide">Px-Base</li>
+                                <li class="hide">Numerote</li>
+                                <li class="hide">Déco Spéciale</li>
+
+                                <li class="hide">Desc Recto</li>
+                                <li class="hide">Desc Verso</li>
+
+                            </ul>
+
+                        </div>
+                        <div class="card-buttons">
+                            <button type="button" class="btn-modif card-btn hide">Modifier</button>
+                            <button type="button" class="btn-suppr card-btn">Supprimer</button>
+
+                            <input type="text" name="numCollection" id="numCollection" class="numCollection"
+                                placeholder="N°" title="Numéro dans la collection">
+
+
+                        </div>
+                    </div>
+
+                </form>
+                <form action="" method="POST" class="card">
+
+                    <div class="card-body">
+
+                        <div class="card-image" onclick="">
+
+                            <img src="images/1.jpeg" data-recto="images/1.jpeg" data-verso="images/2.jpeg"
+                                alt="image de capsule" class="card-img" width="250px" height="180px">
+
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <h5 class="card-title">Vigneron</h5>
+
+                            <ul class="card-info">
+                                <div class="card-Num">
+                                    <li class="info-numero">N° 0001</li><span class="card-variant">Ex</span>
+
+                                </div>
+
+
+
+                                <li class="info-icones">
+                                    <span><img src="images/puzzle.svg" alt="puzzle" class="ico ico-puzzle"
+                                            title="Collection"></span>
+                                    <span><img src="images/diamant.svg" alt="diamant"
+                                            class="ico ico-diamant introuvable" title="Rare"></span>
+                                    <span><img src="images/rv.svg" alt="recto-verso" class="ico ico-rv"
+                                            title="Recto-verso"></span>
+                                </li>
+
+                                <li>Fabricant</li>
+                                <li><span>YYYY </span><span>Bouteille</span></li>
+                                <li>Matière</li>
+                                <li>Cuvée</li>
+                                <li>Decoration</li>
+                                <li>Desc Fond 1</li>
+                                <li>Desc Fond 2</li>
+                                <li>Desc Jupe 1</li>
+                                <li>Desc Jupe 2</li>
+                                <li>80€00</li>
+
+                                <li class="hide">Contenu</li>
+                                <li class="hide">Format</li>
+                                <li class="hide">Menu Catalogue</li>
+                                <li class="hide">Px-Base</li>
+                                <li class="hide">Numerote</li>
+                                <li class="hide">Déco Spéciale</li>
+
+                                <li class="hide">Desc Recto</li>
+                                <li class="hide">Desc Verso</li>
+
+                            </ul>
+
+                        </div>
+                        <div class="card-buttons">
+                            <button type="button" class="btn-creer card-btn ">Ajouter</button>
+                            <button type="button" class="btn-suppr card-btn hide">Supprimer</button>
+
+                            <input type="text" name="numCollection" id="numCollection" class="numCollection"
+                                placeholder="N°" title="Numéro dans la collection">
+
+
+                        </div>
+                    </div>
+
+                </form>
+
+
+            </section>
+
+
+
+        </main>
+
+
+    </div>
+
+
+    <script>
+
+        const icoDiamant = document.querySelectorAll(".ico-diamant") || [];
+
+        icoDiamant.forEach((diamant) => {
+            const classList = diamant.classList;
+            switch (true) {
+                case classList.contains("courante"):
+                    diamant.title = "Courante";
+                    break;
+                case classList.contains("peuCourante"):
+                    diamant.title = "Peu courante";
+                    break;
+
+                case classList.contains("rare"):
+                    diamant.title = "Rare";
+                    break;
+
+                case classList.contains("tresRare"):
+                    diamant.title = "Très rare";
+                    break;
+
+                case classList.contains("introuvable"):
+                    diamant.title = "Introuvable";
+                    break;
+            }
+        });
+    </script>
+</body>
+
+</html>

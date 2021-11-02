@@ -94,10 +94,7 @@ li {
     brightness(97%) contrast(93%);
 }
 
-li.hide,
-#ico-puzzle.hide,
-#ico-diamant.hide,
-#ico-rv.hide {
+.hide {
   display: none;
 }
 /*-------------------- Grid --------------*/
