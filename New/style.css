@@ -429,7 +429,16 @@ main {
   margin-bottom: 10px;
 }
 .news-big-article {
-  max-width: 1200px;
+  max-width: 1000px;
+}
+.news-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-content img {
+  max-width: 600px;
 }
 
 /* CARD */
