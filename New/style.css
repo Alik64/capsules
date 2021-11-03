@@ -433,12 +433,19 @@ main {
 }
 .news-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
-
 .news-content img {
   max-width: 600px;
+  border: 1px solid var(--grey);
+  padding: 10px;
+}
+
+.news-text {
+  padding: 20px;
+}
+.news-text p {
+  margin: 10px 0;
 }
 
 /* CARD */
@@ -812,6 +819,9 @@ main {
   }
   .header_title h1 {
     font-size: 24px;
+  }
+  .news-content {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 800px) {
