@@ -621,6 +621,18 @@ main {
   grid-template-columns: repeat(3, auto);
   gap: 20px;
 }
+
+.newUser-CheckBoxes {
+  display: grid;
+  justify-items: center;
+
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+  padding: 10px;
+  background: #eeeaea;
+  border-radius: 5px;
+}
+
 .newCaps-CheckBoxes {
   display: grid;
   justify-items: center;
