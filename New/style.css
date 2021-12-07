@@ -657,7 +657,8 @@ main {
   justify-content: space-between;
 }
 
-.newCaps-champ input[type="text"] {
+.newCaps-champ input[type="text"],
+.newCaps-champ input[type="email"] {
   width: 150px;
   height: 30px;
   padding: 0 10px;
