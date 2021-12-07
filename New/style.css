@@ -658,7 +658,8 @@ main {
 }
 
 .newCaps-champ input[type="text"],
-.newCaps-champ input[type="email"] {
+.newCaps-champ input[type="email"],
+.newCaps-champ input[type="date"] {
   width: 150px;
   height: 30px;
   padding: 0 10px;
